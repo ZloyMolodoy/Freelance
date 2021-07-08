@@ -1,0 +1,64 @@
+@font-face{
+	font-family: "MR":
+	src: url("fonts/Montserrat-Regular");
+}
+@font-face{
+	font-family:"MM";
+	src: url("fonts/Montserrat-Medium.ttf");
+	}
+	
+.fontMR{
+	font-family:MR;
+}
+.fontMM{
+	font-family:MM;
+}
+#OneLayer{
+	margin-bottom:100px;
+	width:100%;
+	height:700px;
+}
+#TwoLayer{
+	position: absolute;
+	width:100%;
+	height:500;
+	z-index:1;
+	left:80px;
+	right:60px;
+}
+.bgcardOne{
+	background-image: url(image/img04.png);
+}
+.bgcardTwo{
+	background-image: url(image/img06.png); no-repeat; background-size: 100%; 
+}
+.bgcardThree{
+	background-image: url(image/img07.png); no-repeat; background-size:100%;
+}
+.cardtextThree{
+	color:white;
+	font-size:12px;
+}
+.bgcardFour{
+	background-image: url(image/img08.png); no-repeat; background-size:100%;
+}
+.bgcardFive{
+	background-image: url(image/img10.png); no-repeat; background-size:100%;
+}
+.circle{
+width: 139px;
+height: 139px;
+background: rgba(255, 255, 255, 0.33);
+border-radius: 84px;
+}
+.bgcardSix{
+	background-image: url(image/img15.png); no-repeat; background-size:100%;
+}
+.panel{
+position: absolute;
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.01);
+
+border-radius: 5px;
+margin-left:739px;
+}
