@@ -150,3 +150,10 @@ span.sim-dot {
 .a1:focus:after {
     width: 100%;
 }
+.an{
+  text-decoration: none;
+}
+.footerOp{
+  background:url(http://afclub.ru/wp-content/uploads/2019/04/fanti.jpg), no-repeat;
+  height: 214px;
+}
