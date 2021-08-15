@@ -1,0 +1,45 @@
+/* 
+Theme Name: Theme For MSC
+Version: 1.0
+Auther Artem Savelev ZM
+Auther URI: https://vk.com/zloymolodoy13
+Description: Это тема была создана для ведения учета для игры My summer car
+*/
+@font-face {
+    font-family: "OSR";
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "OSB";
+    src: url("fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+    font-family: "OSL";
+    src: url("fonts/OpenSans-Light.ttf");
+}
+header
+{
+    font-family: OSB;
+}
+.FontOSB
+{
+    font-family: OSB;
+}
+.FontOSL
+{
+    font-family: OSL;
+}
+.FontOSR
+{
+    font-family: OSR;
+}
+.navcolor
+{
+    background-color: chartreuse;
+}
+.ForA
+{
+    text-decoration: none;
+    display: inline-block;
+    color:black;
+}
