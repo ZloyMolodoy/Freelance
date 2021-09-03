@@ -1,0 +1,20 @@
+
+.fontSize-30
+{
+    font-size: 30px;
+}
+.fontSize-18
+{
+    font-size: 18px;
+    text-decoration: none;
+
+}
+.pagelist
+{
+    border-radius: 15px;
+    border: 1px solid #2489FF;
+}
+.active
+{
+    color:grey;
+}
