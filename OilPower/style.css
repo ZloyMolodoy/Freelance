@@ -1,23 +1,68 @@
-
+:root
+{
+    --bg-color-card: #72C8FF;
+    --bg-color-card-active: #349CE3;
+}
+/* fonts */
+@font-face
+{
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face
+{
+    font-family: Roboto-Black;
+    src: url(fonts/Roboto-Black.ttf);
+}
+@font-face
+{
+    font-family: Roboto-Medium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face
+{
+    font-family: Roboto-Regular;
+    src: url(fonts/Roboto-Regular.ttf)
+}
+/* Body card */
 .body__card{
 position: relative;
 display: flex;
 flex-direction: column;
 min-width: 0;
 word-wrap: break-word;
-background-color: cadetblue;
+background-color: var(--bg-color-card);
+border: 2px solid var(--bg-color-card);
 background-clip: border-box;
 /* border: 1px solid rgba(0,0,0,.125); */
 border-radius: .25rem;
 }
+.body__card:hover
+{
+    border: 2px solid var(--bg-color-card-active);
+    background-color: var(--bg-color-card-active);
+}
 .body__card_body
 {
-    background-color: cadetblue;
-    text-align: center;
+    padding-top: 40px;
+    background-color: var(--bg-color-card);
+    text-align:center;
+    vertical-align: bottom;
 }
 .body__card_title
 {
     margin-bottom: .5rem;
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    font-family: Roboto-Regular;
+
+
+}
+.body__card_image
+{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+
 }
