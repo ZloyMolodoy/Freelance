@@ -1,4 +1,4 @@
-*{margin:0; padding:0;}
+*{margin:0; padding:0; font-family: Roboto-Regular;}
 :root
 {
     --bg-color-card: #72C8FF;
@@ -76,4 +76,38 @@ border-radius: .25rem;
     height: 150px;
     object-fit: contain;
     margin: auto;
+}
+/* main text */
+.body__main_p
+{
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+/* Breadcrumb */
+.body__breadcrumb
+{
+    padding: 8px 15px;
+    margin: 0 0 20px;
+    list-style: none;
+    display: inline-block;
+    color: black;
+}
+.body__breadcrumb li
+{  
+    color: black;
+    display: inline-block;
+}
+.body__breadcrumb_black
+{
+    color: black;
+}
+.body__breadcrumb_bread
+{
+    color: black;
+    padding: 0 5px
+}
+.body__breadcrumb_active
+{
+    color:#999;
 }
