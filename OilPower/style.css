@@ -47,7 +47,6 @@ a
 }
 .cataloge-cards__elem{
 max-width: 260px;
-/* height: 250px; */
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -55,13 +54,15 @@ background-color: var(--bg-color-card-image);
  border: 2px solid var(--bg-color-card); 
 border-radius: 10px 10px 10px 10px;
 }
-.cataloge-cards__elem:hover
+.cataloge-cards__elem:hover 
 {
     border: 2px solid var(--bg-color-card-active);
-    /* background-color: var(--bg-color-card-active); */
     border-radius: 10px 10px 10px 10px;
 }
-
+.cataloge-cards__elem:hover .cataloge-cards__body
+{
+    background-color: var(--bg-color-card-active);
+}
 .cataloge-cards__body
 {
 
