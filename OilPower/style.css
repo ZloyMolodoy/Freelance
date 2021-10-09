@@ -47,7 +47,7 @@ a
 }
 .cataloge-cards__elem{
 max-width: 260px;
-height: 250px;
+/* height: 250px; */
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -65,16 +65,14 @@ border-radius: 10px 10px 10px 10px;
 .cataloge-cards__body
 {
 
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Roboto-Regular;
-    display: block;
-    /* padding: 5px;  */
-    padding-top: 10px;
-    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50px;
     background-color: var(--bg-color-card);
-    text-align:center;
+    font-size: 18px;
     border-radius: 0 0 4px 4px;
 
 }
@@ -82,11 +80,11 @@ border-radius: 10px 10px 10px 10px;
 {
     text-decoration: none;
     border-radius: 0 0 4px 4px;
-    /* border: 2px solid var(--bg-color-card-active); */
      background-color: var(--bg-color-card-active); 
 }
 .cataloge-cards-image
 {
+    padding: 15px 0;
     display: block;
     width: 200px;
     height: 150px;
@@ -144,9 +142,10 @@ border-radius: 10px 10px 10px 10px;
     {
         max-width: 330px;
     }
-    .cataloge-cards-title
+    .cataloge-cards__body
     {
         font-size:30px;
+        height: 70px;
     }
   }
   
@@ -172,9 +171,10 @@ border-radius: 10px 10px 10px 10px;
     {
         max-width: 260px;
     }
-    .cataloge-cards-title
+    .cataloge-cards__body
     {
         font-size:18px;
+        height: 50px;
     }
   }
   
