@@ -1,9 +1,11 @@
-*{margin:0; padding:0; font-family: Roboto-Regular; outline: 0 !important;}
+*{margin:0; padding:0; font-family: Roboto-Regular; outline: 0 !important;} body{background-color: var(--bg-color);}
 :root
 {
     --bg-color-card: #72C8FF;
     --bg-color-card-active: #349CE3;
+    --bg-color-shop-sidebord:#349CE3;
     --bg-color-card-image:#f3f6fa;
+    --bg-color: #f8f8f8;
 }
 a
 {
@@ -37,6 +39,14 @@ a
     margin: 0 auto;
 }
 /* Body card */
+.shop-cards
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: flex-start;
+}
 .cataloge-cards
 {
     display: flex;
@@ -126,6 +136,46 @@ border-radius: 10px 10px 10px 10px;
 {
     color:#999;
 }
+/* Shop */
+.shop-sidebar
+{
+    width: 20%;
+    float:left;
+}
+.shop-sidebar__elem
+{
+    background-color: white;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.shop-sidebar__elem_a
+{
+    padding-top: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    height: 1000px;
+    border-bottom: 2px solid var(--bg-color-shop-sidebord);
+}
+.main-content{
+    width: 100%;
+}
+/* Shop More */
+.shopmore-cards__body
+{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    font-size: 15px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.shopmore-cards__body span h4
+{
+    width: 100%;
+}
 /* Media запрос */
 @media (min-width: 425.98px){
     .body-container {
@@ -149,16 +199,32 @@ border-radius: 10px 10px 10px 10px;
         height: 70px;
     }
   }
-  
   @media (min-width: 767.98px){
     .body-container {
       max-width: 720px;	
     }
+    .shop-sidebar
+    {
+        display: none;
+    }
+    .main-content
+    {
+        width: 100%;
+    }
   }
   
   @media (min-width: 991.98px) {
-    .body-container {
-      max-width: 870px;
+    .body-container 
+    {
+        max-width: 870px;
+    }
+    .shop-sidebar
+    {
+        display:block;
+    }
+    .main-content
+    {
+        width: 100%;
     }
     .cataloge-main-p
     {
