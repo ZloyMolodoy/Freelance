@@ -4,6 +4,7 @@
     --bg-color-card: #72C8FF;
     --bg-color-card-active: #349CE3;
     --bg-color-shop-sidebord:#349CE3;
+    --bg-color-button:#72C8FF;
     --bg-color-card-image:#f3f6fa;
     --bg-color: #f8f8f8;
 }
@@ -162,19 +163,49 @@ border-radius: 10px 10px 10px 10px;
     width: 100%;
 }
 /* Shop More */
+.shopmore-cards__elem{
+    max-width: 270px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color-card-image);
+     /* border: 2px solid var(--bg-color-card);  */
+    border-radius: 10px 10px 10px 10px;
+    }
+.shopmore-cards__elem h3 
+{
+    padding-left: 15px;
+    padding-bottom: 15px
+}
 .shopmore-cards__body
 {
-    padding-top: 10px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    height: 400px;
     font-size: 15px;
     background-color: white;
     flex-wrap: wrap;
+    align-content: space-between;
 }
 .shopmore-cards__body span h4
 {
     width: 100%;
+}
+.shopmore-cards__button
+{
+    background-color: var(--bg-color-button);
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 252px;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+}
+.shopmore-cards__button:hover
+{
+    background-color: var(--bg-color-card-active);
 }
 /* Media запрос */
 @media (min-width: 425.98px){
