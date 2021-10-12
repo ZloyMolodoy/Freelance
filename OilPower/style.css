@@ -378,6 +378,10 @@ border-radius: 10px 10px 10px 10px;
     .body-container {
       max-width: 750px;	
     }
+    .main-content
+    {
+        /* padding-left: 150px; */
+    }
     .breadcrumb-container
     {
         width: 767px;
@@ -404,6 +408,10 @@ border-radius: 10px 10px 10px 10px;
     .main-content
     {
         width: 100%;
+    }
+    .shop-sidebar
+    {
+        display: none;
     }
 
   }
@@ -436,6 +444,7 @@ border-radius: 10px 10px 10px 10px;
     .main-content
     {
         width: 100%;
+        padding-left: 200px;
     }
     .cataloge-main-p
     {
@@ -457,6 +466,10 @@ border-radius: 10px 10px 10px 10px;
   }
   
   @media (min-width: 1199.98px){
+    .main-content
+    {
+        padding-left: 0px;
+    }
     .body-container {
       max-width: 890px;
     }
