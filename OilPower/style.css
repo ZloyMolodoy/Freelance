@@ -106,7 +106,7 @@ border-radius: 10px 10px 10px 10px;
     margin: auto;
 }
 /* main text */
-.cataloge-main-p
+.cataloge-main__p
 {
     padding-left: 14px;
     margin-top: 15px;
@@ -126,10 +126,7 @@ border-radius: 10px 10px 10px 10px;
     color: black;
     display: inline-block;
 }
-.cataloge-breadcrumb_black
-{
-    color: black;
-}
+
 .cataloge-breadcrumb-bread
 {
     color: black;
@@ -142,7 +139,7 @@ border-radius: 10px 10px 10px 10px;
     float:left;
     box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 25%);
 }
-.shop-sidebar-div
+.shop-sidebar__elem
 {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -152,14 +149,14 @@ border-radius: 10px 10px 10px 10px;
     flex-direction: column;
     border-bottom: 2px solid var(--bg-color-shop-sidebord);
 }
-.shop-sidebar-div-active
+.shop-sidebar__elem_active
 {
     background-color: var(--bg-color-shop-sidebord-active);
     width: 80%;
     display: flex;
     flex-direction: column;
 }
-.shop-sidebar-div-more
+.shop-sidebar__elem_more
 {
     border-bottom: 2px solid var(--bg-color-shop-sidebord);
     background-color: var(--bg-color-shop-sidebord-more);
@@ -167,7 +164,7 @@ border-radius: 10px 10px 10px 10px;
     display: flex;
     flex-direction: column;
 }
-.shop-sidebar-div__bottom
+.shop-sidebar__elem_bottom
 {
     width: 80%;
     background-color: white;
@@ -175,7 +172,7 @@ border-radius: 10px 10px 10px 10px;
     flex-direction: column;
     border-radius: 10px;
 }
-.shop-sidebar-div-a {
+.shop-sidebar__elem_a {
     padding: 10px 0;
     font-size: 14px;
     display: block;
@@ -201,7 +198,7 @@ border-radius: 10px 10px 10px 10px;
     padding-left: 15px;
     padding-bottom: 15px
 }
-.shopmore-cards__body
+.shopmore-cards_body
 {
     padding: 15px;
     display: flex;
@@ -211,10 +208,6 @@ border-radius: 10px 10px 10px 10px;
     background-color: white;
     flex-wrap: wrap;
     align-content: space-between;
-}
-.shopmore-cards__body span h4
-{
-    width: 100%;
 }
 .shopmore-cards__button
 {
@@ -254,16 +247,16 @@ border-radius: 10px 10px 10px 10px;
     padding-bottom: 60px;
     padding-top: 20px;
 }
-.more-card__body
+.more-card_body
 {
     padding-left: 40px
 }
-.more-card__body h3, span
+.more-card_body__h3-span
 {
-    padding-bottom:20px;
+     padding-bottom:20px;
     padding-top: 20px;
 }
-#more-div__line-one
+.more-div__line-one
 {
     background-color: black;
     height: 2px;
@@ -319,16 +312,13 @@ border-radius: 10px 10px 10px 10px;
     padding-left: 130px;
     margin-top: 30px;
 }
-.more-content p {
+.more-content__p {
     padding-top: 20px;
     font-size: 18px;
 }
-.more-content img
-{
-    padding-top:30px;
-}
 .more-content__img
 {
+    padding-top:30px;
     width: 350px;
 }
 .more-content__img__elem
