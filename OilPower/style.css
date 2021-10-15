@@ -7,7 +7,7 @@
     --bg-color-shop-sidebord-active:#349CE3;
     --bg-color-shop-sidebord-more:#72C8FF;
     --bg-color-button:#72C8FF;
-    --bg-color-card-image:#f3f6fa;
+    --bg-color-card__image:#f3f6fa;
     --bg-color: #f8f8f8;
 }
 a
@@ -63,7 +63,7 @@ max-width: 260px;
 width: 100%;
 display: flex;
 flex-direction: column;
-background-color: var(--bg-color-card-image);
+background-color: var(--bg-color-card__image);
  border: 2px solid var(--bg-color-card); 
 border-radius: 10px 10px 10px 10px;
 }
@@ -96,7 +96,7 @@ border-radius: 10px 10px 10px 10px;
     border-radius: 0 0 4px 4px;
      background-color: var(--bg-color-card-active); 
 }
-.cataloge-cards-image
+.cataloge-cards__image
 {
     padding: 15px 0;
     display: block;
@@ -121,7 +121,7 @@ border-radius: 10px 10px 10px 10px;
     display: inline-block;
     color: black;
 }
-.cataloge-breadcrumb li
+.cataloge-breadcrumb__li
 {  
     color: black;
     display: inline-block;
@@ -135,21 +135,18 @@ border-radius: 10px 10px 10px 10px;
     color: black;
     padding: 0 5px
 }
-.cataloge-breadcrumb-active
-{
-    color:#999;
-}
 /* Shop */
 .shop-sidebar
 {
     width: 20%;
     float:left;
+    box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 25%);
 }
 .shop-sidebar-div
 {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    width: 80%;
+    /* width: 80%; */
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -195,11 +192,11 @@ border-radius: 10px 10px 10px 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-color-card-image);
-     /* border: 2px solid var(--bg-color-card);  */
+    background-color: var(--bg-color-card__image);
     border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 25%);
     }
-.shopmore-cards__elem h3 
+.shopmore-cards__h3 
 {
     padding-left: 15px;
     padding-bottom: 15px
@@ -368,7 +365,7 @@ border-radius: 10px 10px 10px 10px;
     }
     .cataloge-cards__body
     {
-        font-size:30px;
+        /* font-size:30px; */
         height: 70px;
     }
 
@@ -448,7 +445,7 @@ border-radius: 10px 10px 10px 10px;
     }
     .cataloge-main-p
     {
-        font-size: 30px;
+        /* font-size: 30px; */
     }
     .cataloge-breadcrumb
     {
@@ -489,3 +486,4 @@ border-radius: 10px 10px 10px 10px;
         
     }
   }
+  
