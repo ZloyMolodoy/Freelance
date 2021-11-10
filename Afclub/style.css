@@ -1,0 +1,141 @@
+/* fonts */
+@font-face{
+	font-family:"GPL";
+	src: url("fonts/GothamPro-Light.ttf")
+}
+@font-face{
+	font-family:"GPB";
+	src: url("fonts/GothamPro-Bold.ttf")
+}
+@font-face{
+	font-family:"GPC";
+	src: url("fonts/GothamPro-Black.ttf")
+}
+@font-face{
+	font-family:"GPM";
+	src: url("fonts/GothamPro-Medium.ttf")
+}
+/* :root */
+:root
+{
+    --main-text-color:#333;
+    --underline-text-color:#f6d472;
+}
+/* Header */
+
+*{font-family: GPB; color:var(--main-text-color); text-decoration: none;}
+
+.container
+{
+    max-width: 1100px;
+    margin: auto;
+    
+}
+.onMobile{display: none;}
+.header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerA
+{
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+}
+.headerA::after
+{
+    display: block;
+    content: "";
+    background-color: var(--underline-text-color);
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.headerA:hover:after,
+.headerA:focus:after {
+    width: 100%;
+}
+.brandImg
+{
+    width: 66px;
+    height: 66px;
+}
+.calltel
+{
+    text-decoration: none;
+
+}
+/* body */
+/* footer */
+/* other */
+@media (max-width:1024.99px)
+{
+    .container
+    {
+        max-width: 800px;
+    }
+    .onMobile{display: none;}
+}
+@media (max-width:768.99px)
+{
+    .container
+    {
+        max-width: 500px;
+    }
+    .onComputer{display: none;}
+    .onMobile{display: block;}
+}
+@media (max-width:425px)
+{
+    .container
+    {
+        max-width: 425px;
+    }
+    .onComputer{display: none;}
+}
+/* Сторонее */
+/* Стиль меню навигации */
+
+  
+  /* Скрыть ссылки внутри меню навигации ( кроме главной/логотип) */
+  .TopBar #myLinks {
+    display: none;
+  }
+  
+  /* Ссылки меню навигации по стилю */
+  .TopBar a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Стиль меню гамбургера */
+  .TopBar a.icon {
+    background-color: #ddd;
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 0;
+  }
+  
+  /* Добавить серый цвет фона при наведении курсора мыши */
+  .TopBar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
