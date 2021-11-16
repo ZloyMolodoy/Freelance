@@ -130,7 +130,19 @@
     font-size: 16px;
     font-family: GPM;
     text-align: center;
-} 
+}
+.divSignUp
+{
+    margin-top: 50px;
+}
+.buttonSignUp
+{
+padding: 20px 30px;
+background-image: linear-gradient(135deg,#f6d472 0,#f6d472 100%);
+border: 1px solid #f6d472!important;
+text-decoration: none;
+border-radius: 5px;
+}
 /* footer */
 /* other */
 @media (max-width:1024.99px)
