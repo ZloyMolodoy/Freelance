@@ -90,6 +90,7 @@
 .mainText
 {
     font-size: 35px;
+    text-align: center;
 }
 .mainTextTwoColor
 {
@@ -98,36 +99,38 @@
 .moreText
 {
     text-align: center;
-    margin-top: -10px;
-    
     font-family: GPM;
 
 }
 .cardContainer
 {
     display: flex;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .card
 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 370px;
+    gap: 23px;
+    padding-right: 30px;
 }
 .card-Image
 {
-    padding-bottom: 20px;
+    width: 35%;
 }
 .card-Title
 {
-    padding-bottom: 20px;
-    font-size: 20px;
+    text-align: center;
+    font-size: 24px;
 }
 .card-BodyText
 {
-    font-size: 17px;
+    font-size: 16px;
     font-family: GPM;
-}
+    text-align: center;
+} 
 /* footer */
 /* other */
 @media (max-width:1024.99px)
@@ -153,6 +156,8 @@
     {
         max-width: 425px;
     }
+    .cardContainer{ justify-content: center;flex-direction: column;}
+    .card{padding: 0;}
     .onComputer{display: none;}
 }
 /* Сторонее */
