@@ -1,0 +1,125 @@
+@font-face{
+	font-family:"Roboto-Medium";
+	src: url("fonts/Roboto-Medium.ttf")
+}
+@font-face{
+	font-family:"Roboto-Regular";
+	src: url("fonts/Roboto-Regular.ttf")
+}
+*{padding: 0; margin: 0;}
+a{text-decoration: none;}
+:root
+{
+    --background-button:#252525;
+    --time-text:#6C6C6C;
+    --input-bg:#F2F3F5;
+}
+.topName
+{
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    align-items:center;
+}
+.topSpan
+{
+    font-family: Roboto-Medium;
+    font-size: 20px;
+}
+.topSpanComments
+{
+    font-family: Roboto-Medium;
+    font-size: 15px;
+}
+.notificationCards
+{
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+}
+.notificationCard
+{
+    border-radius: 50%;
+    display: grid;
+}
+.notificationCardBody
+{   
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: grid;
+    box-shadow: 0px 4px 40px 0px #00000033;
+
+    grid-template-rows: repeat(1, 16px);
+    max-width: 350px;
+    min-height: 110px;
+}
+.timeNotification
+{
+    font-size: 12px;
+    font-family: Roboto-Regular;
+    color: var(--time-text);
+    padding-top: 6px;
+    padding-left: 15px;
+}
+.nameNotification
+{
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: Roboto-Medium;
+}
+.gridButton
+{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.buttonNotification
+{
+    color: white;
+    font-family: Roboto-Regular;
+}
+.bgButtonNotification
+{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--background-button);
+    width: 320px;
+    height: 40px;
+    border-radius: 30px;
+}
+/* Comments */
+.BodyComments
+{
+    padding-left: 20px;
+    margin-top: 30px;
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    display: grid;
+}
+.inputName
+{
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-bg);
+}
+.inputName::placeholder
+{
+    padding-left: 30px;
+    font-size: 18px;
+}
+.inputComments
+{
+    width: 350px;
+    height: 140px;
+    border-radius: 15px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-bg);
+}
+.inputComments::placeholder
+{
+    display: grid;
+    font-size: 18px;
+}
