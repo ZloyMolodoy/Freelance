@@ -77,20 +77,18 @@ a{text-decoration: none;}
 {
     color: white;
     font-family: Roboto-Regular;
-}
-.bgButtonNotification
-{
-    display: grid;
-    align-items: center;
-    justify-items: center;
     background-color: var(--background-button);
     width: 320px;
     height: 40px;
     border-radius: 30px;
+    align-items: center;
+    justify-items: center;
+    display: grid;
 }
 /* Comments */
 .BodyComments
 {
+    grid-template-columns: repeat(1, 360px);
     padding-left: 20px;
     margin-top: 30px;
     font-family: Roboto-Regular;
@@ -99,27 +97,52 @@ a{text-decoration: none;}
 }
 .inputName
 {
-    width: 350px;
+    margin-top: 16px;
+    width: 340px;
     height: 50px;
     border-radius: 15px;
+    padding-left: 15px;
+    color: black;
+    font-size: 18px;
     background-color: var(--input-bg);
     border: 1px solid var(--input-bg);
 }
 .inputName::placeholder
 {
-    padding-left: 30px;
+    color: var(--time-text);
     font-size: 18px;
 }
 .inputComments
 {
-    width: 350px;
+    margin-top: 16px;
+    resize: none;
+    width: 320px;
     height: 140px;
     border-radius: 15px;
+    color: black;
     background-color: var(--input-bg);
     border: 1px solid var(--input-bg);
+    font-size: 18px;
+    padding: 15px;
+    font-family: Roboto-Regular;
 }
 .inputComments::placeholder
 {
-    display: grid;
-    font-size: 18px;
+    color: var(--time-text);
+}
+.stars
+{
+    margin-top: 16px;
+}
+.divStars
+{
+    margin-top: 24px;
+}
+.inputCommentsDiv
+{
+    margin-top: 19px;
+}
+.mgt-100
+{
+    margin-top: 100px;
 }

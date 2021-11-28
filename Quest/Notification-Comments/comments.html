@@ -15,16 +15,20 @@
     <div class="BodyComments">
         <p>Ваши данные</p>
         <input class="inputName" type="text" placeholder="Ваше имя">
-        <p>Оцените заведение</p>
+        <div class="divStars">
+            <p>Оцените заведение</p>
         <!-- IMG -->
-        <div>
-        <object class="pageImageOne" type="image/svg+xml" data="image/StarActive.svg" width="25" height="25" ></object><object class="pageImageOne" type="image/svg+xml" data="image/StarActive.svg" width="25" height="25" ></object><object class="pageImageOne" type="image/svg+xml" data="image/StarActive.svg" width="25" height="25" ></object><object class="pageImageOne" type="image/svg+xml" data="image/StarActive.svg" width="25" height="25" ></object>
-        <object class="pageImageOne" type="image/svg+xml" data="image/StarNonActive.svg" width="25" height="25" ></object>
+            <div class="stars">
+            <object class="pageImageOne" type="image/svg+xml" data="image/StarActive.svg" width="25" height="25" ></object><object class="pageImageOne" type="image/svg+xml" data="image/StarActive.svg" width="25" height="25" ></object><object class="pageImageOne" type="image/svg+xml" data="image/StarActive.svg" width="25" height="25" ></object><object class="pageImageOne" type="image/svg+xml" data="image/StarActive.svg" width="25" height="25" ></object>
+            <object class="pageImageOne" type="image/svg+xml" data="image/StarNonActive.svg" width="25" height="25" ></object>
+            </div>
         </div>
-        <p>Отзыв</p>
-        <input class="inputComments" type="text" placeholder="Что вам понравилось? Кому бы вы посоветовали сюда сходить?" >
-        <div class="gridButton">
-            <div class="bgButtonNotification"><a href="#" class="buttonNotification">Готово</a></div>
+        <div class="inputCommentsDiv">
+            <p>Отзыв</p>
+            <textarea class="inputComments" placeholder="Что вам понравилось? Кому бы вы посоветовали сюда сходить?"></textarea>
+        </div>
+        <div class="gridButton mgt-100">
+            <a href="#" class="buttonNotification">Готово</a>
         </div>
     </div>
 </body>
