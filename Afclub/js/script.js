@@ -1,4 +1,4 @@
-/* Переключение между отображением и скрытием ссылок меню навигации, когда пользователь нажимает на значок меню/панели гамбургеров */
+// HideAndShow Мобильного бара
 function TopBar() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -7,3 +7,15 @@ function TopBar() {
       x.style.display = "block";
     }
   }
+// HideAndShow модального окна
+function modalDiv() 
+{
+  var modal = document.getElementById("modalButton");
+  if (modal.style.display === "block")
+  {
+    modal.style.display = "none";
+  } else 
+  {
+    modal.style.display = "block";
+  }
+}

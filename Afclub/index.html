@@ -78,7 +78,7 @@
       </div>
     </div>
     <div class="divSignUp">
-      <a class="buttonSignUp">ЗАПИСАТЬСЯ</a>
+      <a href="javascript:void(0);" class="buttonSignUp" onclick="modalDiv()">ЗАПИСАТЬСЯ</a>
     </div>
 </div>
 <div id="Zons">
@@ -93,14 +93,14 @@
       <div class="zonaCardAllText">
         <p class="zonaCardMainText firstTextCard">1.ТАВЕРНА</p>
         <p class="zonaCardMoreText">Окунись в атмосферу средневековой таверны из популярных миров фэнтези. Сразись с друзьями в любимые настолки, поучаствуй в чемпионатах по ККИ. 8 столов разного формата позволят играть в любой компании.</p>
-        <a href="#"class="buttonSignUp" >ЗАБРОНИРОВАТЬ</a>
+        <a href="javascript:void(0);" class="buttonSignUp" onclick="modalDiv()">ЗАПИСАТЬСЯ</a>
       </div>
     </div>
     <div class="zonaCardSecond">
       <div class="zonaCardAllText">
         <p class="zonaCardMainText secondTextCard">2.КОСМОС</p>
         <p class="zonaCardMoreText">Перенесись к далеким мирам на нашем сверхбыстром звездолете. Смотри трансляции чемпионатов по онлайн-играм, презентации новинок и участвуй в наших викторинах и розыгрышах призов.</p>
-        <a href="#" class="buttonSignUp" >ЗАБРОНИРОВАТЬ</a>
+        <a href="javascript:void(0);" class="buttonSignUp" onclick="modalDiv()">ЗАПИСАТЬСЯ</a>
       </div>
       <div>
         <img class="car" src="http://afclub.ru/wp-content/uploads/2020/08/Таверна-3-scaled.jpg">
@@ -113,7 +113,7 @@
       <div class="zonaCardAllText">
         <p class="zonaCardMainText thirdTextCard">3.АРКАДА</p>
         <p class="zonaCardMoreText">Установи личный рекорд или состязайся с друзьями в лучшие консольные игры в зоне приставок, оформленной в хай-тек стиле. Выиграй призы в чемпионате.</p>
-        <a href="#" class="buttonSignUp" >ЗАБРОНИРОВАТЬ</a>
+        <a href="javascript:void(0);" class="buttonSignUp" onclick="modalDiv()">ЗАПИСАТЬСЯ</a>
       </div>
     </div>
   </div>
@@ -125,20 +125,20 @@
     <p class="moreText">Для Вашего удобства мы разработали несколько тарифов.<br>
       <br>Мы работаем для Вас каждый день с 11:00 до 22:00.
       <br><br>*Отдельные мероприятия могут проходить в другое время.</p>
-      <!-- <div class="Tables">
+      <div class="Tables">
       <table cellspacing="15">
-        <tr><th class="borders">1 час</th><th>90</th></tr>
-        <tr><td class="borders">4 час</td><td>360</td></tr>
-        <tr><td class="borders">Весь день</td><td>400</td></tr>
+        <tr><th id="#1" class="borders">1 час</th><th>90</th></tr>
+        <tr><td id="#2" class="borders">4 час</td><td>360</td></tr>
+        <tr><td id="#3" class="borders">Весь день</td><td>400</td></tr>
        </table>
        <table cellspacing="15" style="margin-top: 60px;">
-        <tr><th class="borders"></th><th class="borders">КОСМОС</th><th>ТАВЕРНА</th></tr>
-        <tr><td class="borders">1 час</td><td class="borders">600 рублей</td><th>700 рублей</th></tr>
+        <tr><th id="#4" class="borders"></th><th class="borders">КОСМОС</th><th>ТАВЕРНА</th></tr>
+        <tr><td id="#5" class="borders">1 час</td><td class="borders">600 рублей</td><th>700 рублей</th></tr>
        </table>
        <div class="DispayButtonSignUp">
-       <a href="#" class="buttonSignUp" >ЗАБРОНИРОВАТЬ</a>
+        <a href="javascript:void(0);" class="buttonSignUp" onclick="modalDiv()">ЗАПИСАТЬСЯ</a>
       </div>
-      </div> -->
+      </div>
   </div>
 </div>
 
@@ -153,13 +153,17 @@
     </div>
   </div>
 </div>
-
+<div class="bgModalDiv" id="modalButton">
+  <div class="modalDiv">
+    <a href="javascript:void(0);" class="buttonSignUp" onclick="modalDiv()">Х</a>
+  </div>
+</div>
 <div id="contacts" class="container">
   <p class="mainText">НАШИ <span class="mainTextTwoColor">КОНТАКТЫ</span></p>
   <p class="moreText">Наш клуб находится в самом центре Астрахани, в одном квартале от Кремля на пересечении улиц Свердлова и Адмиралтейской.</p>
   <div class="divContactns">
     <div class="maps">
-      <iframe src="https://www.google.com/maps/d/embed?mid=1EMlHh2oml6MeR8C5NmpSKYXWDOMai9eO&amp;hl=ru" width="640" height="480" style="pointer-events: none;"></iframe>
+      <iframe class="GoogleMap" src="https://www.google.com/maps/d/embed?mid=1EMlHh2oml6MeR8C5NmpSKYXWDOMai9eO&amp;hl=ru"></iframe>
     </div>
     <div class="info">
       <p class="contactsText">Контактная <span class="mainTextTwoColor">информация</span></p><br>
@@ -171,7 +175,7 @@
   </div>
 </div>
   <div>
-    <img class="questImage" src="http://afclub.ru/wp-content/uploads/2019/04/fanti.jpg">
+    <!-- <img class="questImage" src="http://afclub.ru/wp-content/uploads/2019/04/fanti.jpg"> -->
     <div>
       <span class="questText">Есть вопросы? Готовы ответить!</span>
     </div>
